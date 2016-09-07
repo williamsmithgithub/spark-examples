@@ -84,7 +84,7 @@ public class AverageResponses {
         if (null == conf) {
             conf = new Configuration();
         }
-        Job job = Job.getInstance(conf, "word count");
+        Job job = Job.getInstance(conf, "Averages");
         job.setJarByClass(AverageResponses.class);
         job.setMapperClass(AverageMapper.class);
         job.setReducerClass(AverageReducer.class);
